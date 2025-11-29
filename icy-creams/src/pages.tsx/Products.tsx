@@ -140,9 +140,11 @@ export function Products(){
         </div>
 
          <br /> <br />
-               <div style={{marginLeft: '40%', color: 'white', fontSize: '1.5rem', fontWeight: '600'}}>
+               <div style={{margin: '10px 100px', color: 'white', fontSize: '1.5rem', fontWeight: '600', textAlign: 'center',
+                border: '1px solid rgba(233, 143, 174, 0.77)', borderRadius: '20px', padding: '10px'
+               }}>
 
-                <h2>Total Bill is ${bill}</h2>
+                <h2 >Total Bill is ${bill}</h2>
                 
                 <button  id='Purchase'
                style={{
