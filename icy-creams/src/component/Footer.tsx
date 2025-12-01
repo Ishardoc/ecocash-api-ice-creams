@@ -15,8 +15,8 @@ export function Footer() {
                </div>
 
             </div>
-            <p>Thank you for refreshing with us <br />Come again</p>
-            <p>2025 copyright @icy-creams</p>
+            <p style={{color: 'grey'}}>Thank you for refreshing with us <br />Come again</p>
+            <p  style={{color: 'grey'}}>2025 copyright @icy-creams</p>
         </footer>
         </>
     )
