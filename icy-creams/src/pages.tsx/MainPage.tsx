@@ -7,6 +7,7 @@ export function MainPage() {
 
     return(
         <>
+
         <div style={{
             backgroundColor: '#ff6e6118',
            width: '100%',
@@ -15,6 +16,16 @@ export function MainPage() {
             color: 'white',
             textAlign: 'center',
         }}>
+
+
+           <div className='logo'>
+             <img src="../public/pics/icon.jpg" alt="icon"  style={{
+                width: '250px', height: '250px', borderRadius: '50px',
+             }}/>
+
+           </div>
+
+           <br /> <br /> <br />
 
             <h2 style={{fontSize:'2rem', color: 'pink'}}> This is our online ice-cream shop</h2>
             <h3 style={{fontFamily: 'cursive' ,fontSize: '1.5rem'}}>We offer many delicious delicases</h3> <br /> 
@@ -43,12 +54,7 @@ export function MainPage() {
 
             </div>
            
-           <div className='logo'>
-             <img src="../public/pics/icon-main.jpg" alt="icon"  style={{
-                width: '250px', height: '250px', borderRadius: '50px',
-             }}/>
-
-           </div>
+          
             <br /> 
             <br /> 
             <br />

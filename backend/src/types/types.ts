@@ -6,3 +6,10 @@ export interface EcoCashApiResponse {
     reason: string;
     status: number;
 }
+
+export interface OrderDeatails{
+    orderNumber: number;
+    sourceReference: string;
+    amount: number;
+    quantity: number;
+}

@@ -1,6 +1,6 @@
-body{
+body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: rgb(2, 2, 37);
 }
 
@@ -11,28 +11,27 @@ h1 {
   text-align: center;
 }
 
-p{
+p {
   text-align: center;
   color: white;
 }
 
-.nav{
+.nav {
   margin-bottom: 2rem;
   background-color: rgb(8, 8, 59);
   align-content: center;
   display: flex;
   justify-content: center;
   flex-direction: row;
- margin: 2rem 5rem 2rem 5rem;
+  margin: 2rem 5rem 2rem 5rem;
   padding: 1rem;
   align-self: center;
   column-gap: 5rem;
   border-radius: 40px;
   box-shadow: 5px 5px 5px black;
-  
 }
 
-.nav a{
+.nav a {
   text-decoration: none;
   background-color: rgb(2, 2, 37);
   border-radius: 50px;
@@ -41,25 +40,25 @@ p{
   font-weight: bold;
 }
 
-.nav a:hover{
+.nav a:hover {
   background-color: #ff6e6185;
   box-shadow: 2px 2px 5px black;
   transition: 0.3s;
   color: rgb(3, 3, 30);
 }
 
-.logo{
+.logo {
   width: 200px;
   height: 200px;
-  background-image: url('../public/pics/logo-pic.jpg');
+  background-image: url("../public/pics/logo-pic.jpg");
   background-size: cover;
   border-radius: 50%;
   background-position: center center;
- align-self: center;
+  align-self: center;
   margin: 2rem auto 0 auto;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -68,15 +67,15 @@ p{
   gap: 2rem 4rem;
 }
 
-.footer{
- background-color: rgb(2, 1, 11);
+.footer {
+  background-color: rgb(8, 8, 59);
   justify-content: center;
   text-align: center;
   padding: 1rem;
   color: #5e5e5e;
 }
 
-.card{
+.card {
   background-color: rgb(2, 1, 11);
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgb(205, 147, 147);
@@ -90,7 +89,7 @@ p{
   border: 1px solid #e49189;
 }
 
-.btn{
+.btn {
   background-color: rgba(10, 5, 36, 0.863);
   border: none;
   border-radius: 20px;
@@ -100,17 +99,16 @@ p{
   cursor: pointer;
   margin-top: 1rem;
   border: 1px solid #ff6f61;
-  
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #d2878073;
   color: rgb(3, 3, 30);
   transition: 0.3s;
 }
 
-.flavour{
-  background-color:  rgb(2, 1, 11);
+.flavour {
+  background-color: rgb(2, 1, 11);
   padding: 1rem 4rem;
   color: pink;
   font-size: larger;
@@ -119,7 +117,21 @@ p{
   width: 100px;
 }
 
-h4{
+h4 {
   color: #e6afaabf;
   font-weight: 600;
+}
+
+.input {
+  padding: 1rem 3.5rem;
+  border-radius: 20px;
+  border: none;
+  color: whitesmoke;
+  background-color: #080324;
+}
+
+.icon {
+  background-color: #0d0e46b4;
+  border: none;
+  border-radius: 10px;
 }
