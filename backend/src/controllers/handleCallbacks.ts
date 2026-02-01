@@ -6,8 +6,8 @@ export async function handleEcocashCallback(req: express.Request, res: express.R
     // Log the callback data for debugging
    try{
      console.log('from the callback handler');
-     const data = await req.body;
-    console.log('EcoCash Callback Received:', data);
+     
+    console.log('EcoCash Callback Received:', req.body);
 
     res.status(200).json({ message: 'Callback received successfully' });
    }catch(error){
