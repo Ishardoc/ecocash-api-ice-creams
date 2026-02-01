@@ -3,6 +3,6 @@ import { handleEcocashCallback } from "../controllers/handleCallbacks";
 
 const router = Router();
 
-router.post('/payments/eco-callback', handleEcocashCallback)
+router.post('/api/ecocash/callback', handleEcocashCallback)
 
 export default router;

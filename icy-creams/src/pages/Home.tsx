@@ -1,8 +1,8 @@
 import  '../App.css';
-import { Navbar } from '../component/navbar';
-import { Logo } from '../component/Logo';
+import { Navbar } from '../components/navbar';
+import { Logo } from '../components/Logo';
 import { MainPage } from './MainPage';
-import { Footer } from '../component/Footer';
+import { Footer } from '../components/Footer';
 import { Products } from './Products';
 import { Contact } from './Contact';
 import { Blog } from './Blog';
@@ -15,7 +15,7 @@ export function Home() {
 
     return(
         <>
-       <body>
+      
          <header id="hero">
             <h1>Welcome to Icy Creams</h1>
             <p>Your one-stop shop for delicious ice creams!</p>
@@ -24,7 +24,7 @@ export function Home() {
            <Logo/>
           <Navbar setActiveSection={setActiveSection}/>
 
-          {activeSection === 'main' && <MainPage/>}
+          {activeSection === 'main' && <MainPage setActiveSection={setActiveSection}/>}
           {activeSection === 'products' && <Products/>}
           {activeSection === 'services' && <Services/>}
           {activeSection === 'blog' && <Blog/>}
@@ -32,7 +32,7 @@ export function Home() {
             
             <Footer/>
 
-       </body>
+     
         </>
     )
 }
