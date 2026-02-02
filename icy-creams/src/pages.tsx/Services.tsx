@@ -13,9 +13,6 @@ export function Services() {
             justifyContent: 'center',
         }}>
             <h1>Comming Soon.......</h1>
-
-            <br /> <br />
-            
         </div>
         </>
     )
