@@ -33,7 +33,7 @@ export const getBills = async (req: express.Request, res: express.Response) => {
 
     //sending to api
     try {
-        const settings = {
+        var settings = {
             "url": "https://developers.ecocash.co.zw/api/ecocash_pay/api/v2/payment/instant/c2b/sandbox",
             "method": "POST",
             "timeout": 0,
@@ -54,19 +54,14 @@ export const getBills = async (req: express.Request, res: express.Response) => {
 
         console.log('Sent to EcoCash API:', response.config.data);
 
-        const responseDataInfo: any = response.config.data
-
-        const { customerPhoneNumber, orderAmount, reason, currency, orderSourceReference } = responseDataInfo
-
-        console.log('data info', responseDataInfo)
         const responseData: EcoCashApiResponse = {
 
             status: response.status,
-            customerPhoneNumber: customerPhoneNumber,
-            amount: orderAmount,
-            currency: currency,
-            reason: reason,
-            sourceReference: orderSourceReference
+            customerPhoneNumber: response.config.data[0],
+            amount: response.config.data[1],
+            currency: response.config.data.currency,
+            transactionReference: response.config.data[5],
+            reason: response.config.data[2]
         }
 
         console.log('Response from EcoCash API:', responseData);

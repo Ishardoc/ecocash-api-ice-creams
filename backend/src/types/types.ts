@@ -2,7 +2,7 @@ export interface EcoCashApiResponse {
     customerPhoneNumber: string;
     amount: number;
     currency: string;
-    sourceReference: string;
+    transactionReference: string;
     reason: string;
     status: number;
 }
